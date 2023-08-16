@@ -1,0 +1,402 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.875rem;
+  background-color: #F2F5F9;
+}
+
+.body-content {
+  margin: 3.125rem 6.25rem;
+  max-width: 74.125rem;
+  max-height: 55.6875rem;
+}
+
+.flex {
+  display: flex;
+}
+.flex-jc-sb {
+  justify-content: space-between;
+}
+.flex-jc-c {
+  justify-content: center;
+}
+.flex-jc-r {
+  justify-content: right;
+}
+.flex-ai-c {
+  align-items: center;
+}
+.flex-fw-w {
+  flex-wrap: wrap;
+}
+.flex-fw-nw {
+  flex-wrap: nowrap;
+}
+.flex-fw-w {
+  flex-wrap: wrap;
+}
+.flex-fd-r {
+  flex-direction: row;
+}
+.flex-fd-c {
+  flex-direction: column;
+}
+
+.header-container {
+  font-family: "Pacifico", cursive;
+  font-size: 1.5rem;
+}
+.header-container .title-text-my {
+  color: #EC1B09;
+}
+.header-container .title-text-portfolio {
+  color: #FF9C1A;
+}
+
+.side-card {
+  background-color: #FFFFFF;
+  border-radius: 1.25rem;
+  align-items: center;
+  text-align: center;
+  width: 25rem;
+  padding-bottom: 3rem;
+}
+.side-card .profile-pic {
+  margin-top: 3.125rem;
+  margin-left: 5.625rem;
+  margin-right: 5.625rem;
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 1.25rem;
+}
+.side-card h1 {
+  font-size: 1.875rem;
+  color: #0B0909;
+  margin-bottom: 0;
+}
+.side-card .occupation {
+  color: #0B0909;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+.side-card .socmed {
+  background-color: #F2F7FC;
+  padding: 1.875rem;
+  border-radius: 0.5rem;
+  border: 0;
+  width: 3.75rem;
+  height: 3.75rem;
+  padding: 1rem;
+}
+.side-card .socmed:hover {
+  background-color: #D9D9D9;
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px #D9D9D9;
+}
+.side-card .contact-card {
+  background-color: #F2F7FC;
+  padding: 2.3125rem;
+  padding-top: 1rem;
+  margin: 1.5rem;
+  border-radius: 1.25rem;
+}
+.side-card .contact-card .cicon {
+  margin-right: 1.5rem;
+}
+.side-card .contact-card .contact-info {
+  text-align: left;
+}
+.side-card .contact-card .contact-info .name {
+  color: #1A1003;
+  margin-bottom: 0;
+}
+.side-card .contact-card .contact-info .value {
+  font-weight: 600;
+  margin-top: 0;
+}
+.side-card .contact-card .borderline {
+  color: #D9D9D9;
+  border: 0.5px solid;
+}
+.side-card .contact-card .download-btn {
+  background-color: #FF9C1A;
+  height: 2.625rem;
+  width: 11.5625rem;
+  border-radius: 1.25rem;
+  margin-top: 1.5rem;
+  border: 0;
+}
+.side-card .contact-card .download-btn .dicon {
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-left: 1rem;
+}
+.side-card .contact-card .download-btn .download-text {
+  font-size: 0.75rem;
+  color: #FFFFFF;
+  margin-left: 0.5rem;
+}
+.side-card .contact-card .download-btn:hover {
+  background-color: darkorange;
+  box-shadow: 0 0 10px #D9D9D9;
+}
+
+.navigation {
+  background-color: #F2F7FC;
+  border-radius: 1.25rem;
+  align-items: center;
+  text-align: center;
+  width: 31.25rem;
+  padding: 0.625rem 5.9375rem;
+  margin-right: 3.875rem;
+  border: 0.5px solid #D9D9D9;
+}
+.navigation .nav-item {
+  background-color: #E1E8EF;
+  align-items: center;
+  text-align: center;
+  border-radius: 1.25rem;
+  width: 5rem;
+  height: 5rem;
+  border: 0;
+}
+.navigation .nav-item p {
+  color: black;
+  font-weight: 600;
+  font-size: 0.75rem;
+  margin-top: 1px;
+}
+.navigation .nav-item:hover {
+  background-color: #FFEBD1;
+}
+.navigation .nav-item[name=selected] {
+  background-color: #FF9C1A;
+}
+.navigation .nav-item[name=selected] .nav-btn {
+  filter: invert(98%) sepia(27%) saturate(482%) hue-rotate(173deg) brightness(100%) contrast(98%);
+}
+.navigation .nav-item[name=selected] p {
+  color: #F2F7FC;
+}
+
+.page-content {
+  background-color: #FFFFFF;
+  padding: 1.75rem 4.4375rem;
+  margin-top: 0.625rem;
+  border-radius: 1.25rem;
+  flex-grow: 1;
+}
+.page-content h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+}
+.page-content .line {
+  width: 15.75rem;
+  height: 0.125rem;
+  background-color: #FE9119;
+}
+.page-content p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+}
+.page-content h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: black;
+}
+.page-content .cards {
+  padding: 0;
+  gap: 1.7rem 1.5rem;
+}
+.page-content .cards .item-card {
+  width: 18rem;
+  border-radius: 1.25rem;
+  padding: 1rem 1rem;
+}
+.page-content .cards .item-card h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.page-content .cards .item-card p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+.page-content .cards .item-card[name=odd] {
+  background-color: #FFEBD1;
+}
+.page-content .cards .item-card[name=even] {
+  background-color: #F2F7FC;
+}
+
+.page-content[name=resume] .cards {
+  padding-top: 0.75rem;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
+.page-content[name=resume] .cards h4 {
+  font-size: 1.75rem;
+  font-family: "Poppins", sans-serif;
+}
+.page-content[name=resume] .cards .item-card {
+  border-radius: 0.625rem;
+}
+.page-content[name=resume] .cards .item-card .year {
+  color: #1A1003 50%;
+  opacity: 0.5;
+}
+.page-content[name=resume] .cards .item-card .major {
+  font-weight: 600;
+}
+.page-content[name=resume] .cards .item-card .institute {
+  font-weight: 500;
+}
+.page-content[name=resume] .cards .item-card[name=dark] {
+  background-color: #FFE3BF;
+}
+.page-content[name=resume] .cards .item-card[name=light] {
+  background-color: #FFEBD1;
+}
+.page-content[name=resume] .skills {
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
+.page-content[name=resume] .skills .work-skills, .page-content[name=resume] .skills .soft-skills {
+  width: 18rem;
+}
+.page-content[name=resume] .skills .work-skills h4, .page-content[name=resume] .skills .soft-skills h4 {
+  margin-bottom: 0;
+  font-size: 1.75rem;
+  font-family: "Poppins", sans-serif;
+}
+.page-content[name=resume] .skills .work-skills ul, .page-content[name=resume] .skills .soft-skills ul {
+  padding: 0;
+  list-style: none;
+}
+.page-content[name=resume] .skills .work-skills ul li, .page-content[name=resume] .skills .soft-skills ul li {
+  margin-bottom: 12px;
+}
+.page-content[name=resume] .skills .work-skills ul li .flex, .page-content[name=resume] .skills .soft-skills ul li .flex {
+  gap: 2rem;
+}
+.page-content[name=resume] .skills .work-skills ul li .flex .skill-item, .page-content[name=resume] .skills .soft-skills ul li .flex .skill-item {
+  font-size: 0.75rem;
+  background-color: #F2F7FC;
+  border-radius: 0.5rem;
+  padding: 0.625rem 0.5rem;
+}
+
+.page-content[name=contact] .cards {
+  padding-top: 0.75rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+.page-content[name=contact] .cards .item-card {
+  height: 9.4375rem;
+  width: 18.5rem;
+  border-radius: 1.25rem;
+  padding-left: 1.625rem;
+}
+.page-content[name=contact] .cards .item-card h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.page-content[name=contact] .cards .item-card p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  margin-left: 1.8rem;
+  margin-top: 0;
+}
+.page-content[name=contact] .cards .item-card[name=phone] {
+  background-color: #FFE3BF;
+}
+.page-content[name=contact] .cards .item-card[name=email] {
+  background-color: #F2F7FC;
+}
+.page-content[name=contact] .form {
+  font-size: 1rem;
+  background-color: #F2F7FC;
+  padding: 2.6875rem 4.375rem 2.875rem 2.375rem;
+  border-radius: 1.25rem;
+  margin-top: 2rem;
+}
+.page-content[name=contact] .form #contact-form p {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-right: 5px;
+}
+.page-content[name=contact] .form #contact-form .input {
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 1rem;
+  background: transparent;
+}
+.page-content[name=contact] .form #contact-form .formline {
+  color: #D9D9D9;
+  border: 0.5px solid;
+}
+.page-content[name=contact] .form #contact-form .submit {
+  margin-top: 1.625rem;
+  border-radius: 1.25rem;
+  height: 2.5rem;
+  width: 6.3125rem;
+  background-color: #F2F7FC;
+  border-color: #FF9C1A;
+}
+.page-content[name=contact] .form #contact-form .submit:hover {
+  background-color: #FF9C1A;
+}
+
+@media screen and (max-width: 900px) {
+  .body-content {
+    justify-content: center;
+    max-width: 35.125rem;
+  }
+  .header-container {
+    justify-self: center;
+    align-self: center;
+  }
+  .sc {
+    flex: display;
+    justify-self: center;
+    align-self: center;
+    flex-wrap: wrap;
+  }
+  .flex {
+    justify-content: left;
+  }
+  .flex .navigation {
+    width: 28rem;
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
+  }
+  .page-content {
+    width: 28rem;
+  }
+  .side-card {
+    width: 28rem;
+  }
+  .side-card > .flex {
+    justify-content: center;
+  }
+  .page-content > .flex {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=stylize.css.map */
